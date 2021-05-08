@@ -1,0 +1,33 @@
+{
+    "name": "Keep Track",
+    "description": "Keeping track with Google Calendar.",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "oauth2": {
+        "client_id": "",
+        "scopes": [
+            "profile email",
+            "https://www.googleapis.com/auth/calendar"
+        ]
+    },
+    "icons": {
+        "16": "./images/icon-16x16.png",
+        "32": "./images/icon-32x32.png",
+        "48": "./images/icon-48x48.png",
+        "128": "./images/icon-128x128.png"
+    },
+    "background": {
+        "scripts": [
+            "./background.js"
+        ]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "identity",
+        "identity.email",
+        "https://www.googleapis.com/*"
+    ]
+}
